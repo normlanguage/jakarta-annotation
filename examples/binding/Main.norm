@@ -1,0 +1,27 @@
+package binding
+
+import jakarta.annotation.PostConstruct
+import jakarta.annotation.PreDestroy
+
+class Lifecycle {
+  Boolean started = false
+  Boolean stopped = false
+
+  @PostConstruct()
+  Void start() {
+    started = true
+  }
+
+  @PreDestroy()
+  Void stop() {
+    stopped = true
+  }
+}
+
+Void main() {
+  Lifecycle lifecycle = Lifecycle()
+  lifecycle.start()
+  lifecycle.stop()
+  require(condition: lifecycle.started && lifecycle.stopped, message: "Lifecycle methods did not execute")
+  printLine("lifecycle")
+}
