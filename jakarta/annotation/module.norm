@@ -1,7 +1,7 @@
 Module module() {
   return module(
     name: "jakarta.annotation",
-    version: 4,
+    version: 5,
     exports: ["Nonnull", "Nullable", "PostConstruct", "PreDestroy", "Priority"],
     dependencies: [dependency(repository: "norm", name: "java.base", version: 1)],
     binding: jarBinding(
@@ -21,3 +21,4 @@ Module module() {
     )
   )
 }
+
