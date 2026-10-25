@@ -1,6 +1,6 @@
 # jakarta.annotation Skill
 
-Use this skill to work with Norm module `jakarta.annotation` version 5. Use only declarations listed below.
+Use this skill to work with Norm module `jakarta.annotation` version 6. Use only declarations listed below.
 
 ## `jakarta.annotation`
 
